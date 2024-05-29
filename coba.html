@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Navbar with jQuery</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    list-style: none;
+    padding: 0;
+    background-color: #333;
+}
+
+.navbar > li {
+    position: relative;
+}
+
+.navbar > li > a {
+    display: block;
+    padding: 14px 20px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.navbar > li > a:hover {
+    background-color: #575757;
+}
+
+.dropdown {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    position: absolute;
+    background-color: #333;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown > li > a {
+    display: block;
+    padding: 14px 20px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.dropdown > li > a:hover {
+    background-color: #575757;
+}
+
+.container {
+    padding: 20px;
+}
+
+.content {
+    display: none;
+}
+
+.content.active {
+    display: block;
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+            <li>
+                <a href="#" class="nav-link">Menu</a>
+                <ul class="dropdown">
+                    <li><a href="#" class="dropdown-link" data-target="home">Home</a></li>
+                    <li><a href="#" class="dropdown-link" data-target="about">About</a></li>
+                    <li><a href="#" class="dropdown-link" data-target="contact">Contact</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div id="home" class="content active">
+            <h1>Home</h1>
+            <p>Welcome to the home page!</p>
+        </div>
+        <div id="about" class="content">
+            <h1>About</h1>
+            <p>Learn more about us on this page.</p>
+        </div>
+        <div id="contact" class="content">
+            <h1>Contact</h1>
+            <p>Get in touch with us through this page.</p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+    // Tampilkan dropdown ketika link menu diklik
+    $('.nav-link').click(function(e) {
+        e.preventDefault();
+        $(this).next('.dropdown').toggle();
+    });
+
+    // Mengganti konten ketika item dropdown diklik
+    $('.dropdown-link').click(function(e) {
+        e.preventDefault();
+        const target = $(this).data('target');
+
+        $('.content').removeClass('active');
+        $('#' + target).addClass('active');
+
+        // Sembunyikan dropdown setelah mengklik item
+        $(this).closest('.dropdown').hide();
+    });
+
+    // Sembunyikan dropdown jika klik di luar menu
+    $(document).click(function(e) {
+        if (!$(e.target).closest('.navbar').length) {
+            $('.dropdown').hide();
+        }
+    });
+});
+
+    </script>
+</body>
+</html>
