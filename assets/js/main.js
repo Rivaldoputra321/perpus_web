@@ -10,4 +10,30 @@ $(document).ready(function() {
         $(this).addClass('d-none').hide();
         $('#searchButton').show();
     });
+
+});
+$(document).ready(function() {
+    var noFavorites = true;
+    var noHistory = true; 
+
+    if (noFavorites) {
+        $('.favorites-list').hide();
+        $('.no-favorites').show();
+    } else {
+        $('.favorites-list').show();
+        $('.no-favorites').hide();
+    }
+
+    if (noHistory) {
+        $('.favorites-list').hide();
+        $('.no-history').show();
+    } else {
+        $('.favorites-list').show();
+        $('.no-history').hide();
+    }
+
+    $('.nav-link').on('click', function() {
+        $('.nav-link').removeClass('active');
+        $(this).addClass('active');
+    });
 });
