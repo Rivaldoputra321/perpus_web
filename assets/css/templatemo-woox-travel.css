@@ -504,11 +504,14 @@ Header Style
   display: none;
 }
 
-
 .nav-item.dropdown:hover .dropdown-menu {
   display: block;
 }
 
+.navbar-nav{
+  display: flex;
+  justify-content: space-between;
+}
 
 
 
@@ -735,8 +738,8 @@ Banner Style
     margin-left: 0;
   }
 }
-.bxs-star{
-  color: gold;
+.bxs-like{
+  margin-left: 40px; 
 }
 
 
@@ -1110,6 +1113,7 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top: 50px;
 }
 
 
@@ -1119,7 +1123,7 @@ body {
   padding: 0.5rem 1rem;
   text-align: center;
   display: inline-block;
-  width: 32%;
+  width: 24%;
 }
 
 .sub-nav .nav-link:hover {
@@ -1128,13 +1132,134 @@ body {
 
 .sub-nav .nav-link.active {
   font-weight: bold;
-  color: var(--main-color); /* Active link color */
+  color: var(--main-color); 
 }
 
 .no-favorites {
   padding: 50px 0;
 }
 
+.no-history {
+  padding: 50px 0;
+}
+.no-waiting {
+  padding: 50px 0;
+}
+/* akun */
+
+.container-profile{
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.avatar-container {
+  margin-right: 20px;
+}
+
+.form-container {
+  flex: 1;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.mb-3 {
+  margin-bottom: 15px;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+
+.form-content {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.form-control-profile {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+
+.btn-primary {
+  background-color: var(--main-color);
+  color: #fff;
+  border: none;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  color: #000;
+  border: none;
+}
+
+
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-warning:hover {
+  background-color: #d39e00;
+}
+
+
+
+.avatar-container {
+  position: relative;
+  text-align: center; 
+}
+
+.avatar {
+  display: block;
+  margin: 0 auto; 
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  flex: 1;
+  margin-right: 10px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.custom-file-upload {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.custom-file-upload:hover {
+  background-color: #f0f0f0;
+}
+
+/* end akun */
 
 /* end likes, history, akun */
 /* 

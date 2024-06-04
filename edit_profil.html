@@ -8,7 +8,7 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-  <title>Likes</title>
+  <title>Edit Profil</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -94,105 +94,49 @@
 </header>
 
 <div class="sub-nav bg-light py-2">
-  <div class="container">
-      <div class="nav w-100" role="group" aria-label="Basic example">
-          <a href="Likes.html" class="nav-link text-success active">Likes</a>
-          <a href="history.html" class="nav-link text-success">History</a>
-          <a href="waiting.html" class="nav-link text-success">Waiting List</a>
-          <a href="profile.html" class="nav-link text-success">Akun</a>
-      </div>
+    <div class="container">
+        <div class="nav w-100" role="group" aria-label="Basic example">
+            <a href="Likes.html" class="nav-link text-success">Likes</a>
+            <a href="history.html" class="nav-link text-success">History</a>
+            <a href="waiting.html"  class="nav-link text-success">Waiting List</a>
+            <a href="profile.html" class="nav-link text-success active">Akun</a>
+        </div>
+    </div>
   </div>
+
+<div class="container-profile">
+    <div class="avatar-container">
+        <img src="assets/images/apatar.jpg" alt="Avatar" class="avatar">
+        <div>
+            <input type="file" id="avatar-input" style="display: none;">
+            <button class="btn btn-outline-primary mt-3 btn-ubah">Ubah Avatar</button>
+        </div>
+    </div>
+    <div class="form-container">
+        <form>
+            <div class="mb-3">
+                <label for="username" class="form-label">Nama Pengguna</label>
+                <input type="text" class="form-control-profile" id="username" placeholder="Enter your username" value="Mio_Mirza">
+            </div>
+            <div class="mb-3">
+                <label for="name" class="form-label">Nama</label>
+                <input type="text" class="form-control-profile" id="name" placeholder="Enter your name" value="Mirza">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control-profile" id="email" placeholder="Enter your email" value="Mio_Mirza@gmail.com">
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Nomor Telpon</label>
+                <input type="tel" class="form-control-profile" id="phone" placeholder="Enter your phone number" value="089555666">
+            </div>
+            <button type="submit" class="btn btn-primary">Simpan</button>
+            <a href="profile.html" class="btn btn-warning">Kembali</a>
+            
+        </form>
+    </div>
 </div>
 
-    <main class="container my-4">
-        <h3>Yang Kamu Sukai</h3>
-
-        <!-- If there are no favorite webtoons, display this section -->
-        <div class="no-favorites text-center" style="display: none; margin-top: 150px;">
-            <p class="lead">Tidak ada like.</p>
-            <p>Anda Belum Menyukai Apapun</p>
-        </div>
-
-        <!-- If there are favorite webtoons, display this section -->
-        <div class="row favorites-list">
-            <div class="col-md-2 mb-3">
-              <a href="detailbook.html">
-                <div class="card">
-                  <img src="assets/images/Every Science Fiction and Fantasy Novel You Need to Read From Now Till June.jpeg" class="card-img" alt="...">
-                  <div class="card-body">
-                    <h1 class="card-title">Tess Of The Roads</h1>
-                    <p class="card-text">
-                    Action
-                    <span><i class='bx bxs-like'></i></span>
-                    <span class="rating-percentage">200</span>
-                  </p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-md-2 mb-3">
-              <a href="detailbook.html">
-                <div class="card">
-                  <img src="assets/images/Every Science Fiction and Fantasy Novel You Need to Read From Now Till June.jpeg" class="card-img" alt="...">
-                  <div class="card-body">
-                    <h1 class="card-title">Tess Of The Roads</h1>
-                    <p class="card-text">
-                    Action
-                    <span><i class='bx bxs-like'></i></span>
-                    <span class="rating-percentage">200</span>
-                  </p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-md-2 mb-3">
-              <a href="detailbook.html">
-                <div class="card">
-                  <img src="assets/images/Every Science Fiction and Fantasy Novel You Need to Read From Now Till June.jpeg" class="card-img" alt="...">
-                  <div class="card-body">
-                    <h1 class="card-title">Tess Of The Roads</h1>
-                    <p class="card-text">
-                    Action
-                    <span><i class='bx bxs-like'></i></span>
-                    <span class="rating-percentage">200</span>
-                  </p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-md-2 mb-3">
-              <a href="detailbook.html">
-                <div class="card">
-                  <img src="assets/images/Every Science Fiction and Fantasy Novel You Need to Read From Now Till June.jpeg" class="card-img" alt="...">
-                  <div class="card-body">
-                    <h1 class="card-title">Tess Of The Roads</h1>
-                    <p class="card-text">
-                    Action
-                    <span><i class='bx bxs-like'></i></span>
-                    <span class="rating-percentage">200</span>
-                  </p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-md-2 mb-3">
-              <a href="detailbook.html">
-                <div class="card">
-                  <img src="assets/images/Every Science Fiction and Fantasy Novel You Need to Read From Now Till June.jpeg" class="card-img" alt="...">
-                  <div class="card-body">
-                    <h1 class="card-title">Tess Of The Roads</h1>
-                    <p class="card-text">
-                    Action
-                    <span><i class='bx bxs-like'></i></span>
-                    <span class="rating-percentage">200</span>
-                  </p>
-                  </div>
-                </div>
-              </a>
-            </div>
-        </div>
-    </main>
-  <!-- ***** Book Detail Area End ***** -->
 
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
@@ -207,6 +151,14 @@
   <script src="assets/js/popup.js"></script>
   <script src="assets/js/custom.js"></script>
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+  <script>
+    $(document).ready(function() {
+        $('.btn-ubah').click(function() {
+            $('#avatar-input').click();
+        });
+    });
+  </script>
 
 </body>
 </html>

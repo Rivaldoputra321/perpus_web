@@ -42,6 +42,9 @@
   <header class="header-area header-sticky">
     <nav class="navbar navbar-expand bg-secondary navbar-dark sticky-top px-4 py-0">
         <div class="navbar-nav align-items-center ms-auto">
+            <a href="index.html" class="nav-link" >
+                Home
+            </a>
             <button class="btn btn-search ms-4" type="button" id="searchButton">
                 <i class="fa fa-search"></i>
             </button>
@@ -79,12 +82,11 @@
                     <span class="d-none d-lg-inline-flex">John Doe</span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
-                    <a href="#" class="dropdown-item">Likes</a>
-                    <a href="#" class="dropdown-item">History</a>
-                    <a href="#" class="dropdown-item">Akun</a>
-                    <a href="#" class="dropdown-item">Log Out <span><svg xmlns="http://www.w3.org/2000/svg" color = "red"width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-right" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8m-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5"/>
-                    </svg></span></a>
+                    <a href="Likes.html" class="dropdown-item">Likes</a>
+                    <a href="history.html" class="dropdown-item">History</a>
+                    <a href="waiting.html" class="dropdown-item">Waiting List</a>
+                    <a href="profile.html" class="dropdown-item">Akun</a>
+                    <a href="#" class="dropdown-item">Log Out <span><i class="fa fa-sign-out" style="color: red;"></i></span></a>
                 </div>
             </div>
         </div>
@@ -94,9 +96,10 @@
 <div class="sub-nav bg-light py-2">
   <div class="container">
       <div class="nav w-100" role="group" aria-label="Basic example">
-          <a href="#" class="nav-link text-success active">Likes</a>
-          <a href="#" class="nav-link text-success">History</a>
-          <a href="#" class="nav-link text-success">Akun</a>
+          <a href="Likes.html" class="nav-link text-success">Likes</a>
+          <a href="history.html" class="nav-link text-success active">History</a>
+          <a href="waiting.html"  class="nav-link text-success">Waiting List</a>
+          <a href="profile.html" class="nav-link text-success">Akun</a>
       </div>
   </div>
 </div>
@@ -112,51 +115,83 @@
 
         <!-- If there are favorite webtoons, display this section -->
         <div class="row favorites-list">
-            <div class="col-md-4 mb-3">
+            <div class="col-md-2 mb-3">
               <a href="detailbook.html">
-                <div class="card">
-                  <img src="assets/images/Every Science Fiction and Fantasy Novel You Need to Read From Now Till June.jpeg" class="card-img" alt="...">
-                  <div class="card-body">
-                    <h1 class="card-title">Tess Of The Roads</h1>
-                    <p class="card-text">
-                    Action
-                    <span style="margin-left: 40px; color: gold;"><i class='bx bxs-star'></i></span>
-                    <span class="rating-percentage">4.0</span>
-                  </p>
-                  </div>
+                <d<div class="col-md-2 mb-3">
+                  <a href="detailbook.html">
+                    <div class="card">
+                      <img src="assets/images/Every Science Fiction and Fantasy Novel You Need to Read From Now Till June.jpeg" class="card-img" alt="...">
+                      <div class="card-body">
+                        <h1 class="card-title">Tess Of The Roads</h1>
+                        <p class="card-text">
+                        Action
+                        <span><i class='bx bxs-like'></i></span>
+                        <span class="rating-percentage">200</span>
+                      </p>
+                      </div>
+                    </div>
+                  </a>
                 </div>
-              </a>
-            </div>
-            <div class="col-md-4 mb-3">
-              <a href="detailbook.html">
-                <div class="card">
-                  <img src="assets/images/Every Science Fiction and Fantasy Novel You Need to Read From Now Till June.jpeg" class="card-img" alt="...">
-                  <div class="card-body">
-                    <h1 class="card-title">Tess Of The Roads</h1>
-                    <p class="card-text">
-                    Action
-                    <span style="margin-left: 40px; color: gold;"><i class='bx bxs-star'></i></span>
-                    <span class="rating-percentage">4.0</span>
-                  </p>
-                  </div>
+                <div class="col-md-2 mb-3">
+                  <a href="detailbook.html">
+                    <div class="card">
+                      <img src="assets/images/Every Science Fiction and Fantasy Novel You Need to Read From Now Till June.jpeg" class="card-img" alt="...">
+                      <div class="card-body">
+                        <h1 class="card-title">Tess Of The Roads</h1>
+                        <p class="card-text">
+                        Action
+                        <span><i class='bx bxs-like'></i></span>
+                        <span class="rating-percentage">200</span>
+                      </p>
+                      </div>
+                    </div>
+                  </a>
                 </div>
-              </a>
-            </div>
-            <div class="col-md-4 mb-3">
-              <a href="detailbook.html">
-                <div class="card">
-                  <img src="assets/images/Every Science Fiction and Fantasy Novel You Need to Read From Now Till June.jpeg" class="card-img" alt="...">
-                  <div class="card-body">
-                    <h1 class="card-title">Tess Of The Roads</h1>
-                    <p class="card-text">
-                    Action
-                    <span style="margin-left: 40px; color: gold;"><i class='bx bxs-star'></i></span>
-                    <span class="rating-percentage">4.0</span>
-                  </p>
-                  </div>
+                <div class="col-md-2 mb-3">
+                  <a href="detailbook.html">
+                    <div class="card">
+                      <img src="assets/images/Every Science Fiction and Fantasy Novel You Need to Read From Now Till June.jpeg" class="card-img" alt="...">
+                      <div class="card-body">
+                        <h1 class="card-title">Tess Of The Roads</h1>
+                        <p class="card-text">
+                        Action
+                        <span><i class='bx bxs-like'></i></span>
+                        <span class="rating-percentage">200</span>
+                      </p>
+                      </div>
+                    </div>
+                  </a>
                 </div>
-              </a>
-            </div>
+                <div class="col-md-2 mb-3">
+                  <a href="detailbook.html">
+                    <div class="card">
+                      <img src="assets/images/Every Science Fiction and Fantasy Novel You Need to Read From Now Till June.jpeg" class="card-img" alt="...">
+                      <div class="card-body">
+                        <h1 class="card-title">Tess Of The Roads</h1>
+                        <p class="card-text">
+                        Action
+                        <span><i class='bx bxs-like'></i></span>
+                        <span class="rating-percentage">200</span>
+                      </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-2 mb-3">
+                  <a href="detailbook.html">
+                    <div class="card">
+                      <img src="assets/images/Every Science Fiction and Fantasy Novel You Need to Read From Now Till June.jpeg" class="card-img" alt="...">
+                      <div class="card-body">
+                        <h1 class="card-title">Tess Of The Roads</h1>
+                        <p class="card-text">
+                        Action
+                        <span><i class='bx bxs-like'></i></span>
+                        <span class="rating-percentage">200</span>
+                      </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
         </div>
     </main>
   <!-- ***** Book Detail Area End ***** -->
